@@ -5,7 +5,6 @@ CXX = g++
 # compiling flags here
 CFLAGS = -Wall
 
-LINKER   = g++
 # linking flags here
 LFLAGS_PREV = -Wall 
 LFLAGS_POST = -lsfml-graphics -lsfml-window -lsfml-system
@@ -19,7 +18,7 @@ SOURCES  := $(wildcard $(SRCDIR)/*.cpp)
 INCLUDES := $(wildcard $(SRCDIR)/*.h)
 OBJECTS  := $(addprefix $(OBJDIR)/,$(notdir $(SOURCES:.cpp=.o)))
 
-.PHONY: run all clean main creature
+.PHONY: run all clean
 
 
 all: $(BINDIR)/$(TARGET)
