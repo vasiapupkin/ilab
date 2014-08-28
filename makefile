@@ -42,7 +42,7 @@ $(BINDIR)/$(TARGET): $(OBJECTS)
 
 $(OBJDIR)/%.o: $(SRCDIR)/%.cpp
 		@echo ----------------------------------------
-	 @echo -- Compiling $< 
+		@echo -- Compiling $< 
 		@echo -- $< => $@ 
 		@$(CXX) $(CFLAGS) -c $< -o $@					
 		@echo -- Done
