@@ -3,7 +3,7 @@
 SRCDIR="src"
 OBJDIR="obj"
 BINDIR="bin"
-MAKEFILE="makefile"
+MAKEFILE="make.makefile"
 
 if [ -d $SRCDIR ]; then 	rm -rf $SRCDIR 
 fi
